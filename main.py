@@ -60,11 +60,11 @@ def animate(i):
     y4 = np.sin(ya) * 0.85
 
     # the function to adjust color smoothly
-    rr = lambda: int(abs(35 + (40 * np.sin(i/150))))
-    gg = lambda: int(abs(105 + (50 * np.sin(i/150))))
-    bb = lambda: int(abs(175 + (50 * np.sin(i/150))))
+    rr = int(abs(35 + (40 * np.sin(i/150))))
+    gg = int(abs(105 + (50 * np.sin(i/150))))
+    bb = int(abs(175 + (50 * np.sin(i/150))))
 
-    new_color = '#%02X%02X%02X' % (rr(), gg(), bb())
+    new_color = '#%02X%02X%02X' % (rr, gg, bb)
 
     line1.set_color(new_color)
     line2.set_color(new_color)
