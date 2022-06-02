@@ -32,15 +32,10 @@ def init():
 
 # animate is called everytime a new frame needs to be generated
 def animate(i):
- 
-    global line1
-    global line2
-    global line3
-    global line4
     
+    # initial x, y, time, and offset where i=time and d=offset
     xa = np.linspace(0.5, 2.0, 1000)
     ya = 2 * np.pi * (xa - .01 * i)
-    
     d = .015
     
     # line1 data  (min  max  num)
